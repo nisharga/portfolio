@@ -1,0 +1,53 @@
+.services {
+    padding: 120px 0px 80px 0px; 
+  } 
+  .about{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  } 
+  .nisharga{
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold; 
+  }
+  .cards {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.singleCard h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+ 
+
+  
+ 
+   
+  
+  /* blur */
+    .s-blur2 {
+    left: 14rem;
+    top: 8rem;
+  } 
+  
+   .s-blur1 {
+    top: 13rem;
+    left: -18rem;
+  }  
+  
+   @media screen and (max-width: 576px) {
+    .services {
+      padding: 60px 30px; 
+    } 
+    .cards{
+      margin-top: 40px;
+    }
+  }
+  

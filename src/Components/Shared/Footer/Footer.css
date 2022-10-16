@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -7rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 4rem;
+  color: white;
+}
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+.f-content span {
+  padding-top: 25px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.f-icons {
+  margin-top: -30px;
+}
+.f-icons svg {
+  cursor: pointer;
+}
+@media screen and (max-width: 480px){
+  .f-content{
+    transform: scale(.5);
+  }
+  .f-content span {
+    padding-top: 40px; 
+}
+}
