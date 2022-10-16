@@ -1,0 +1,148 @@
+.intro {
+    padding: 60px 0px; 
+}
+img.me {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+}
+.i-left {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 1;
+    justify-content: center;
+}
+
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>.heading span{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 5px;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-about{
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 20px; 
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.i-icons {
+    margin-top: 3rem;
+    gap: 0rem;
+    display: flex;
+}
+.i-icons > * {
+    transform: scale(0.5);
+}
+.i-icons > *:hover {
+    cursor: pointer;
+}
+
+/* .i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right > * {
+    position: absolute;
+    z-index: 1;
+} */
+.i-right {
+    position: relative;
+    overflow: hidden;
+}
+.i-right img{
+    max-width: 100%;
+}
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+ left: -15%;
+    top: -9%;
+    
+}
+.i-right>:nth-child(2) {
+    transform: scale(0.67);
+    left: 0.4rem;
+    top: -2rem;
+    z-index: 1;
+    position: absolute;
+}
+.i-right>:nth-child(3) {
+    left: 20%;
+    transform: scale(0.8);
+    top: -11%;
+    width: 50%;
+    position: absolute;
+    z-index: 9;
+}
+.i-right>:nth-child(4) {
+    top: 0%;
+    left: -14%;
+    transform: scale(0.5);
+    padding: 0px;
+    border-radius: 50%;
+    position: absolute;
+}
+    .flotingdivone {
+        top: 20%;
+        left: 60%;
+        position: absolute;
+        z-index: 9;
+    }
+    .flotingdivtwo {
+        bottom: 10%;
+        left: 2%;
+        position: absolute;
+        z-index: 10;
+    }
+
+
+/* blur */
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .intro {
+      flex-direction: column;
+      gap: 7rem;
+      height: 64rem;
+    }
+  
+    .i-right {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+    .i-right .blur {
+      display: none;
+    }
+    .floatingDiv:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+    
+    .i-left {
+        padding: 25px;
+    }
+  }
+  

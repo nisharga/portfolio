@@ -49,11 +49,41 @@ const Navbar = () => {
                         Services
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <Link to="/portfolio" className="nav-link">
-                        Portfolio
+                    <li className="nav-item"> 
+                      <Link
+                      to="experience" spy={true} smooth={true} offset={50} duration={500} 
+                      className="nav-link">
+                        Experience
                       </Link>
                     </li> 
+                    <li className="nav-item"> 
+                      <Link
+                      to="works" spy={true} smooth={true} offset={50} duration={500} 
+                      className="nav-link">
+                        Works
+                      </Link>
+                    </li> 
+                    <li className="nav-item"> 
+                      <Link
+                      to="portfolio" spy={true} smooth={true} offset={50} duration={500} 
+                      className="nav-link">
+                        Portfolio
+                      </Link>
+                    </li>
+                    <li className="nav-item"> 
+                      <Link
+                      to="testimonials" spy={true} smooth={true} offset={50} duration={500} 
+                      className="nav-link">
+                        Testimonials
+                      </Link>
+                    </li>
+                    <li className="nav-item"> 
+                      <Link
+                      to="contact" spy={true} smooth={true} offset={50} duration={500} 
+                      className="nav-link">
+                        Contact
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
